@@ -1,0 +1,28 @@
+.sort__menu--scroll {
+  @include media-breakpoint-up(md) {
+    min-width: 100%;
+    overflow-x: scroll;
+  }
+  @include media-breakpoint-up(lg) {
+    overflow-x: hidden;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tag {
+  padding: 2px .5rem;
+  line-height: 1;
+  border-radius: $rounded-pill;
+  color: $info;
+  background: $light;
+  font-size: 0.625rem;
+  @include media-breakpoint-up(xl) {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+.tag + .tag {
+  margin-bottom: .25rem;
+}

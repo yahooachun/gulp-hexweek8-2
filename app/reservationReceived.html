@@ -1,0 +1,48 @@
+---
+title: 訂房成功 | ALOHA
+layout: ./app/layout.ejs
+engine: ejs
+current: reservationReceived
+hasSubscribe: false
+---
+
+<main class="container grid-h pt-6">
+  <div class="row justify-content-lg-center">
+    <div class="col-lg-8">
+      <h2 class="h4 h2-md mb-6 mb-md-8">Reservation received!</h2>
+      <table class="table font-sm h6-md mb-6">
+        <tbody>
+          <tr class="row no-gutters pt-4 border-top">
+            <th class="col-3 text-black">Guest</th>
+            <td class="col-9">David Lin</td>
+          </tr>
+          <tr class="row no-gutters">
+            <th class="col-3 text-black">Email</th>
+            <td class="col-9">david0520@mail.com.tw
+              <span class="font-xs ml-md-4 d-block d-md-inline"><a href="#">Confirmation email sent to this address</a></span></td>
+          </tr>
+          <tr class="row no-gutters">
+            <th class="col-3 text-black">Phone</th>
+            <td class="col-9">+886 9 32 456 789</td>
+          </tr>
+          <tr class="row no-gutters pt-4 mt-4 border-top">
+            <th class="col-3 text-black">Room</th>
+            <td class="col-9">Deluxe Suite with Pool / 2 nights</td>
+          </tr>
+          <tr class="row no-gutters">
+            <th class="col-3 text-black">Check-in</th>
+            <td class="col-9">Wednesday, 17 June 2020</td>
+          </tr>
+          <tr class="row no-gutters py-4 mt-4 border-top border-bottom">
+            <th class="col-3 text-black">Check-out</th>
+            <td class="col-9">Friday, 19 June 2020</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex flex-column flex-md-row justify-content-end">
+        <a href="./reservationDetail.html" class="btn btn-outline-primary font-weight-bold mb-2 mb-md-0 mr-md-2">EDIT RESERVATION</a>
+        <a href="./index.html" class="btn btn-primary font-weight-bold ">HOMEPAGE</a>
+      </div>
+    </div>
+  </div>
+</main>

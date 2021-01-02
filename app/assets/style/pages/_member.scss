@@ -1,0 +1,19 @@
+.img_profile {
+  height: 64px;
+  width: 64px;
+}
+
+.member {
+  .card-img {
+    height: 226px;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    @include media-breakpoint-up(md) {
+      border-top-right-radius: 0;
+      height: 186px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 175px;
+    }
+  }
+}

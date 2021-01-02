@@ -1,0 +1,18 @@
+.grid-h {
+  min-height: calc(100vh - 72px - 107px);
+  @include media-breakpoint-up(md) {
+    min-height: calc(100vh - 72px - 70px);
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100vh - 72px - 73px);
+  }
+}
+// 固定在header下方
+.sticky-header {
+  position: sticky;
+  top: 56px;
+  z-index: 1;
+  @include media-breakpoint-up(md) {
+    top: 72px;
+  }
+}

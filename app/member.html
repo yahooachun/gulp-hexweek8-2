@@ -1,0 +1,131 @@
+---
+title: Member | ALOHA
+layout: ./app/layout.ejs
+engine: ejs
+current: member
+hasSubscribe: false
+---
+<main class="container member grid-h">
+  <div class="row pt-6 flex-lg-row-reverse">
+    <div class="col-lg-4 mb-12">
+      <div class="d-flex align-items-center mb-4 mb-md-5 mb-lg-6">
+        <h2 class="h4 mr-2">Profile</h2>
+        <p class="badge badge-pill badge-primary d-inline-flex align-items-center mr-auto">
+          <span class="material-icons font-sm mr-1">check</span>
+          VERIFIED</p>
+        <a class="font-sm font-weight-bold" href="#">EDIT</a>
+      </div>
+      <div class="row bg-light rounded-lg no-gutters p-4 p-md-6">
+        <div class="col-md-6 col-lg-12">
+          <div class="d-flex justify-content-lg-between mb-6">
+            <div class="w-100">
+              <h3 class="h6 mb-6">User details</h3>
+              <div class="d-flex">
+                <img class="img_profile rounded-lg img-cover d-none d-md-block d-lg-none mr-4" src="./assets/images/profile.jpg" alt="profile">
+                <ul class="list-unstyled">
+                  <li class="mb-4">David Lin</li>
+                  <li class="mb-4">david0520@mail.com.tw</li>
+                  <li>+886 9 32 456 789</li>
+                </ul>
+              </div>
+            </div>
+            <img class="img_profile rounded-lg img-cover d-md-none d-lg-block" src="./assets/images/profile.jpg" alt="profile">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-12">
+          <h3 class="h6 mb-6">Payment methods</h3>
+          <div class="d-flex">
+            <ul class="font-sm p-4 bg-white rounded list-unstyled w-100 mr-1 mr-md-2">
+              <li>xxxx-xxxx-7890</li>
+              <li>DAVID LIN</li>
+              <li class="d-flex justify-content-between">08/2029 <span class="fab fa-cc-visa text-black mt-1"></span></li>
+            </ul>
+            <div class="bg-white rounded w-100 d-flex align-items-center justify-content-center">
+              <button class="btn btn-sm btn-primary rounded-pill">
+                <span class="material-icons">add</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 mb-12">
+      <h2 class="h4 mb-6">My Bookings</h2>
+      <ul class="d-flex align-items-center list-unstyled font-weight-bold mb-6" role="tablist">
+        <li>
+          <a class="nav-link active pl-0" id="navTab-Upcoming" data-toggle="tab" href="#nav-Upcoming" role="tab" aria-controls="nav-Upcoming"  aria-selected="true">Upcoming</a>
+        </li>
+        <li>
+          <a class="nav-link" id="navTab-Completed" data-toggle="tab" href="#nav-Completed" role="tab" aria-controls="nav-Completed" aria-selected="true">Completed</a>
+        </li>
+      </ul>
+      <ul class="list-unstyled">
+        <li class="card">
+          <div class="row no-gutters">
+            <div class="col-md-5 col-lg-4 col-xl-5">
+              <img src="./assets/images/Rachada1.jpg" alt="" class="member__img img-cover card-img card-img-top">
+            </div>
+            <div class="col-md-7 col-lg-8 col-xl-7 bg-light bg-white-md d-md-flex justify-content-between p-6 px-md-4 py-lg-4 rounded-lg-bottom">
+              <ul class="list-unstyled">
+                <li class="d-flex mb-2">
+                  <span class="material-icons text-black mr-4">hotel</span>
+                  <div>
+                    <h4 class="h6 font-weight-bold">Rachada Hotel</h4>
+                    <p class="font-sm">Deluxe Suite with Pool</p>
+                  </div>
+                </li>
+                <li class="d-flex mb-2">
+                  <span class="material-icons text-black mr-4">date_range</span>
+                  <div>
+                    <h4 class="h6 font-weight-bold">17 June 2020 - 19 June 2020</h4>
+                    <p class="font-sm">2 nights・2 adults</p>
+                  </div>
+                </li>
+                <li class="d-flex mb-6 mb-md-0">
+                  <span class="material-icons text-black mr-4">attach_money</span>
+                  <div>
+                    <h4 class="h6 font-weight-bold">TWD 4,633</h4>
+                    <p class="font-sm">includes taxes and charges</p>
+                  </div>
+                </li>
+              </ul>
+              <a class="font-sm font-weight-bold" href="#">VIEW DETAILS</a>
+            </div>
+          </div>
+        </li>
+        <li class="card mt-6 pt-md-6">
+          <div class="row no-gutters">
+            <div class="col-md-5 col-lg-4 col-xl-5">
+              <img src="./assets/images/Rachada1.jpg" alt="" class="member__img img-cover card-img">
+            </div>
+            <div class="col-md-7 col-lg-8 col-xl-7 bg-light bg-white-md d-md-flex justify-content-between p-6 px-md-4 py-lg-4 rounded-lg-bottom">
+              <ul class="list-unstyled">
+                <li class="d-flex mb-2">
+                  <span class="material-icons text-black mr-4">hotel</span>
+                  <div>
+                    <h4 class="h6 font-weight-bold">Rachada Hotel</h4>
+                    <p class="font-sm">Deluxe Suite with Pool</p>
+                  </div>
+                </li>
+                <li class="d-flex mb-2">
+                  <span class="material-icons text-black mr-4">date_range</span>
+                  <div>
+                    <h4 class="h6 font-weight-bold">17 June 2020 - 19 June 2020</h4>
+                    <p class="font-sm">2 nights・2 adults</p>
+                  </div>
+                </li>
+                <li class="d-flex mb-6 mb-md-0">
+                  <span class="material-icons text-black mr-4">attach_money</span>
+                  <div>
+                    <h4 class="h6 font-weight-bold">TWD 4,633</h4>
+                    <p class="font-sm">includes taxes and charges</p>
+                  </div>
+                </li>
+              </ul>
+              <a class="font-sm font-weight-bold" href="#">VIEW DETAILS</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>

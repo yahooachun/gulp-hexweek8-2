@@ -1,0 +1,23 @@
+.banner {
+  background-color: $black;
+  &__img {
+    height: 315px;
+    opacity: .7;
+    @include media-breakpoint-up(md) {
+      height: 320px;
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  &__icon {
+    font-size: $h4-font-size;
+    @include media-breakpoint-up(md) {
+      font-size: $h1-font-size;
+    }
+  }
+}

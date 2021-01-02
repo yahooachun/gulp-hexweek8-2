@@ -1,0 +1,28 @@
+// daterangepicker
+.daterangepicker td {
+  &.in-range {
+    background-color: $light;
+  }
+  &.active {
+    background-color: $primary;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
+
+//swiper
+.swiper-button-next{
+  position: absolute;
+  top: 33%;
+  right: 20px;
+  color: $black;
+  &::after {
+    content: '';
+  }
+  .material-icons {
+    background-color: $light;
+    border: 0.5rem solid $light;
+    border-radius: 50%;
+  }
+}

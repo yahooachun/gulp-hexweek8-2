@@ -1,0 +1,18 @@
+.page-item {
+  &.disabled {
+    opacity: 0.6;
+  }
+  .page-link {
+    &.page-next {
+      background-color: $primary;
+      color: $white;
+      border-radius: $border-radius;
+    }
+    &.page-previous {
+      background-color: $white;
+      color: $primary;
+      border-radius: $border-radius;
+      border: 1px solid $primary;
+    }
+  }
+}

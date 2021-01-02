@@ -1,0 +1,15 @@
+.nav-link {
+  color: $info;
+  &.active {
+    color: $primary;
+  }
+  @include media-breakpoint-up(md) {
+    padding: $nav-link-padding-y 1.5rem;
+  }
+}
+.nav-link--border {
+  border-bottom: 2px solid $light;
+  &.active {
+    border-color: $primary;
+  }
+}

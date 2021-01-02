@@ -1,0 +1,8 @@
+.detail {
+  .carousel-item img {
+    height: 247px;
+    @include media-breakpoint-up(sm) {
+      height: 314px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.login {
+  height: calc(100vh - 82px);
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    @include media-breakpoint-up(md) {
+      background: url('../images/login.jpg') center/cover no-repeat;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 63.5%;
+    }
+    @media (min-width: 1440px) {
+      width: 59%;
+    }
+  }
+}

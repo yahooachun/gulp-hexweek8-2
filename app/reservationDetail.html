@@ -1,0 +1,88 @@
+---
+title: 訂房詳情 | ALOHA
+layout: ./app/layout.ejs
+engine: ejs
+current: reservationDetail
+hasSubscribe: false
+---
+<main>
+  <div class="bg-light d-md-none" id="reserveControl">
+    <div class="js-reserveControl" type="button" data-toggle="collapse" data-target="#rederved-modal" aria-expanded="true" aria-controls="rederved-modal">
+      <div class="container d-flex py-4 font-sm">
+        <p class="js-reserveTotal">Total <span class="font-weight-bold text-black ml-2">TWD 4,633</span></p>
+        <p class="font-weight-bold text-primary ml-auto">DETAIL<span class="material-icons ml-1 js-reserveIcon">keyboard_arrow_down</span></p> 
+      </div>
+    </div>
+    <div class="js-reserveControl" type="button" data-toggle="collapse" data-target="#rederved-modal" aria-expanded="true" aria-controls="rederved-modal">
+      <div id="rederved-modal" class="bg-light w-100 z-index-2 position-absolute" data-parent="#reserveControl">
+        <dl class="container border-top border-white py-4">
+          <dt class="text-black">Booking details</dt>
+          <dd class="font-sm">17 June 2020 - 19 June 2020・2 nights</dd>
+          <dd class="font-sm">2 adults・1 room</dd>
+          <dd class="font-sm">Rachada Hotel</dd>
+          <hr>
+          <dt class="text-black d-flex">Price summary</dt>
+          <dd class="d-flex justify-content-between font-sm">Deluxe Suite with Pool
+            <span>TWD 3,960</span></dd>
+          <dd class="d-flex justify-content-between font-sm">VAT (7%)
+            <span>TWD 277</span></dd>
+          <dd class="d-flex justify-content-between font-sm">Property service charge
+            <span>TWD 396</span>
+          </dd>
+          <hr>
+          <div class="d-flex justify-content-between font-sm">
+            <dt class="font-weight-normal mb-0">Total</dt>
+            <dd class="text-black font-weight-bold mb-0">TWD 4,633</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="container grid-h pt-6">
+    <div class="row justify-content-md-center">
+      <div class="col-md-6 col-xl-4">
+        <h2 class="h4 h2 mb-6">Reservation details</h2>
+        <form action="#">
+          <div class="form-group">
+            <label for="name_reservation">Name</label>
+            <input type="text" class="form-control" id="name_reservation" name="name" placeholder="王小明">
+          </div>
+          <div class="form-group">
+            <label for="emial_reservation">Email</label>
+            <input type="email" class="form-control" id="emial_reservation" name="emial" placeholder="abc123@mail.com">
+          </div>
+          <div class="form-group mb-6">
+            <label for="phone_reservation">Phone (optional)</label>
+            <input type="text" class="form-control" id="phone_reservation" name="phone" placeholder="0912-123-123">
+          </div>
+          <a href="./reservationReceived.html" class="btn btn-primary btn-block font-weight-bold mb-2">RESERVE</a>
+          <div class="text-center">
+            <a href="#" class="text-center">Reserve now, pay at stay</a>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6 col-xl-4 bg-light d-none d-md-block p-6 h-100  rounded-lg">
+        <dl>
+          <dt class="text-black">Booking details</dt>
+          <dd class="font-sm">17 June 2020 - 19 June 2020・2 nights</dd>
+          <dd class="font-sm">2 adults・1 room</dd>
+          <dd class="font-sm">Rachada Hotel</dd>
+          <hr>
+          <dt class="text-black d-flex">Price summary</dt>
+          <dd class="font-sm d-flex justify-content-between">Deluxe Suite with Pool
+            <span>TWD 3,960</span></dd>
+          <dd class="font-sm d-flex justify-content-between">VAT (7%)
+            <span>TWD 277</span></dd>
+          <dd class="font-sm d-flex justify-content-between">Property service charge
+            <span>TWD 396</span>
+          </dd>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <dt class="font-weight-normal mb-0">Total</dt>
+            <dd class="text-black font-weight-bold mb-0">TWD 4,633</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</main>
