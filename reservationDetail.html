@@ -1,11 +1,55 @@
----
-title: 訂房詳情 | ALOHA
-layout: ./app/layout.ejs
-engine: ejs
-current: reservationDetail
-hasSubscribe: false
----
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>訂房詳情 | ALOHA</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  
+  <header class="container-fluid sticky-top bg-white px-0">
+  <div class="container">
+    <div class="navbar navbar-expand-md navbar-light py-md-4">
+      <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h1 class="navbar-brand">
+        <a class="logo" href="./index.html">ALOHA</a>
+      </h1>
+      
+        <div class="navbar-nav d-md-none">
+          <a class="nav-link" href="./login.html">Login</a>
+        </div>
+        <nav class="collapse navbar-collapse" id="headerNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-8">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons">language</span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">繁體中文</a>
+                <a class="dropdown-item" href="#">簡體中文</a>
+                <a class="dropdown-item" href="#">English</a>
+              </div>
+            </li>
+            <li class="nav-item mr-8">
+              <a class="nav-link" href="#">Sign up</a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="./login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      
+    </div>
+  </div>
+</header>
+  
+  <main>
   <div class="bg-light d-md-none" id="reserveControl">
     <div class="js-reserveControl" type="button" data-toggle="collapse" data-target="#rederved-modal" aria-expanded="true" aria-controls="rederved-modal">
       <div class="container d-flex py-4 font-sm">
@@ -86,3 +130,24 @@ hasSubscribe: false
     </div>
   </div>
 </main>
+
+  
+  
+  <footer class="container font-sm py-6 border-top">
+  <div class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-md-between">
+    <P class="mr-lg-16">© 2020 ALOHA, Inc. All rights reserved.</P>
+    <ul class="list-unstyled d-flex mb-4 mb-md-0">
+      <li><a class="mr-6 text-info" href="#">FAQs</a></li>
+      <li><a class="mr-6 text-info" href="#">Terms of use</a></li>
+      <li><a class="text-info" href="#">Privacy policy</a></li>
+    </ul>
+    
+    
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+</html>
